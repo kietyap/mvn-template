@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<mule.version>3.8.0</mule.version>
     	<mule.tools.version>1.2</mule.tools.version>
-    	<appname>mvn</appname>
+    	<app.name>template</app.name>
 	</properties>
 
 	<build>
@@ -57,7 +57,7 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>2.1.1</version>
 				<configuration>
-					<applicationName>${appname}-maven</applicationName>
+					<applicationName>${app.name}-${appname}-maven</applicationName>
 					<deploymentType>cloudhub</deploymentType>
 					<muleVersion>3.8.0</muleVersion>
 					<username>${username}</username>
